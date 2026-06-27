@@ -22,7 +22,7 @@ char Advance();
 void SkipWhiteSpace();
 
 Token ReadIdentifier();
-Token Readstring();
+Token ReadString();
 
 };
 
