@@ -28,12 +28,13 @@ EOF,
 
 struct Token 
 {
-TokenType Token, 
-std::string text, 
+TokenType token; 
+std::string text; 
 
-token(const std::string& text) 
+Token(TokenType token, const std::string& text) 
 : Type(type) 
   Text(text) 
-
+{
+}
 
 };
