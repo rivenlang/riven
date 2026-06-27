@@ -32,8 +32,8 @@ TokenType token;
 std::string text; 
 
 Token(TokenType token, const std::string& text) 
-: Type(type) 
-  Text(text) 
+: type(type) 
+  text(text) 
 {
 }
 
