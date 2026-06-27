@@ -1,12 +1,12 @@
 #pragma once
-
-#include "../common/Token.h"
+#include <cstddef>
+#include "../common/Token.hpp"
 
 class Lexer
 {
 public: 
 Lexer(const std::string& source) 
-std::vector<Token>Tokenize();
+std::vector<Token> Tokenize();
 
 private:
 
@@ -18,7 +18,7 @@ char Advance();
 
 void SkipWhiteSpace();
 
-Token ReadIndentifier();
+Token ReadIdentifier();
 Token Readstring();
 
 };
