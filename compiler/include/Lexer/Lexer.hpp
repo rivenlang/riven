@@ -9,12 +9,12 @@ class Lexer
 {
 public: 
 Lexer(const std::string& source);
-std::vector<Token> Tokenize();
+std::vector<Token> tokenize();
 
 private:
 
-std::string Source;
-size_t Position;
+std::string r_Source;
+size_t r_Position;
 
 char Peek() const;
 char Advance();
