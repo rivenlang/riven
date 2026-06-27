@@ -18,7 +18,7 @@ OUTPUT,
 
 STRING, 
 SEMICOLON, 
-EOF, 
+END_OF_FILE, 
 
 
 };
@@ -32,6 +32,7 @@ std::string r_text;
 Token(TokenType Tokentype, const std::string& Tokentext)
 : r_text(Tokentext) 
   r_token(Tokentype) 
-
+{
+}
 
 };
