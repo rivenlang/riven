@@ -26,12 +26,12 @@ END_OF_FILE,
 
 struct Token 
 {
-TokenType r_token;
+TokenType r_type;
 std::string r_text;
 
-Token(TokenType Tokentype, const std::string& Tokentext)
-: r_text(Tokentext) 
-  r_token(Tokentype) 
+Token(TokenType Tokentype, const std::string& text)
+: r_text(text), 
+  r_type(Tokentype) 
 {
 }
 
