@@ -4,7 +4,7 @@
 enum class TokenType
 {
 
-FILE, 
+FTN, 
 MAIN, 
 
 LEFT_BRACKET,
