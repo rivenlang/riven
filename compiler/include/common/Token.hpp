@@ -26,12 +26,12 @@ EOF,
 
 struct Token 
 {
-TokenType token;
-std::string text;
+TokenType r_token;
+std::string r_text;
 
-Token(TokenType token, const std::string& text)
-: text(Tokentext) 
-  token(Tokentype) 
+Token(TokenType Tokentype, const std::string& Tokentext)
+: r_text(Tokentext) 
+  r_token(Tokentype) 
 
 
 };
