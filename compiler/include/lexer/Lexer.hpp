@@ -15,14 +15,20 @@ private:
 
 std::string r_Source;
 size_t r_Position;
+size_t line, 
+size_t coloumn, 
 
 char Peek() const;
 char Advance();
+char previous();
+char isatend();
 
 void SkipWhiteSpace();
 
 Token ReadIdentifier();
 Token ReadString();
+Token ReadOperator();
 
+Token NextToken();
 };
 
