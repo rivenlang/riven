@@ -9,20 +9,21 @@ class Lexer
 {
 public: 
 Lexer(const std::string& source);
-std::vector<Token> tokenize();
+std::vector<Token> Tokenize();
 
 private:
 
 std::string r_Source;
 size_t r_Position;
-size_t line, 
-size_t coloumn, 
+size_t (r_line, r_coloumn);
 
 char Peek() const;
 char Advance();
-char previous();
-char isatend();
-
+char Previous();
+if (IsAtEnd()) 
+{
+ 
+}
 void SkipWhiteSpace();
 
 Token ReadIdentifier();
