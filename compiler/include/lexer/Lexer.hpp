@@ -21,7 +21,7 @@ char Peek() const;
 char Advance();
 char Previous();
 
-bool IsAtEnd();
+bool IsAtEnd() const;
 
 void SkipWhiteSpace();
 
