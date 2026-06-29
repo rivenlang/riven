@@ -14,16 +14,15 @@ std::vector<Token> Tokenize();
 private:
 
 std::string r_Source;
-size_t r_Position;
-size_t (r_line, r_coloumn);
+
+size_t r_Position, r_line, r_coloumn;
 
 char Peek() const;
 char Advance();
 char Previous();
-if (IsAtEnd()) 
-{
- 
-}
+
+bool IsAtEnd();
+
 void SkipWhiteSpace();
 
 Token ReadIdentifier();
